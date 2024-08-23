@@ -1,0 +1,95 @@
+:root {
+    --orange: #FF7F00;
+    --light-orange: #FFA500;
+    --blue: #1E90FF;
+    --dark-blue: #000080;
+    --white: #FFFFFF;
+  }
+  
+  .home {
+    background-color: var(--white);
+    color: var(--dark-blue);
+  }
+  
+  .navbar {
+    background-color: var(--orange);
+  }
+  
+  .btn-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 60vh;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 40vh;
+    }
+  }
+  
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #photo-gallery img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #photo-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  #reviews .carousel-item {
+    min-height: 200px;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .form-control, .btn {
+      font-size: 0.9rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .carousel-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto;
+    aspect-ratio: 16 / 9; /* This creates a 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      aspect-ratio: 4 / 3; /* Adjust aspect ratio for smaller screens if desired */
+    }
+  }
