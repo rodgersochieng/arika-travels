@@ -1,50 +1,28 @@
-
-// src/components/Navbar.js
-import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './Navbar.css';
-
+import logo from '../assets/logo.jpg';
 const Navbar = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    const navbarCollapse = document.getElementById('navbarNav');
-    if (navbarCollapse) {
-      navbarCollapse.classList.remove('show');
-    }
-  }, [location]);
-
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#003366' }}>
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Arika le Travels</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Tours</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Gallery</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <Link className="navbar-brand" to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ width: '40px', height: 'auto',marginRight: '10px' }} 
+          />
+          Arika le Travels
+        </Link>
+        <a href="mailto:info@example.com" className="navbar-email">
+          <span className="email-icon">✉️</span> info@arikatravels.com
+        </a>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+

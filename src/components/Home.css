@@ -90,6 +90,25 @@
   
   @media (max-width: 768px) {
     .carousel-container {
-      aspect-ratio: 4 / 3; /* Adjust aspect ratio for smaller screens if desired */
+      aspect-ratio: 4 / 3; 
     }
   }
+
+.notification-wrapper {
+  position: fixed;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1051; 
+}
+
+.notification {
+  margin: 0;
+  padding: 20px;
+  max-width: 400px; 
+  text-align: center;
+}
+
+.modal {
+  z-index: 1050; 
+}

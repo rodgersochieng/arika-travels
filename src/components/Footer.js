@@ -26,6 +26,8 @@ const Footer = () => {
               <a href="https://wa.me/+25443560826" className="btn btn-success">
                 <i className="fa fa-whatsapp"></i> WhatsApp Inquiry
               </a>
+      <p  className=" text-white text-center py-2 mt-3"  >&copy; {new Date().getFullYear()} Arika Le Travels. All rights reserved.</p>
+
             </div>
           </Col>
         </Row>
