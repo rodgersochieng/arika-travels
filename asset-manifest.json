@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/arika-travels/static/css/main.5b5be186.css",
+    "main.js": "/arika-travels/static/js/main.16bac298.js",
+    "static/js/453.419a5d54.chunk.js": "/arika-travels/static/js/453.419a5d54.chunk.js",
+    "static/media/logo.jpg": "/arika-travels/static/media/logo.e72b8693f90862a16fad.jpg",
+    "index.html": "/arika-travels/index.html",
+    "main.5b5be186.css.map": "/arika-travels/static/css/main.5b5be186.css.map",
+    "main.16bac298.js.map": "/arika-travels/static/js/main.16bac298.js.map",
+    "453.419a5d54.chunk.js.map": "/arika-travels/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b5be186.css",
+    "static/js/main.16bac298.js"
+  ]
+}
